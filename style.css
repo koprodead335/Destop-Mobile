@@ -1,0 +1,45 @@
+body {
+    background-color: #007AFF; /* фон для всего сайта */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* шрифт для  */
+}
+/* стили для всех абзацев текста */
+p {
+    color: white;
+}
+/* 1. ГЛОБАЛЬНЫЕ СТИЛИ (Сброс браузерных отступов) */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 2. ШАПКА / СИНИЙ БЛОК (Родительский контейнер) */
+.suka {
+    padding: 40px 676px 442px 90px; /* отступы: сверху, справа, снизу, слева */
+}
+.header___wrapper {
+    max-width: auto;
+    margin-inline: auto;
+}
+.header___new {
+    display: flex;
+    justify-content: space-between;
+}
+/* 3. ГЛАВНЫЙ КОНТЕНТ */
+main {
+    position: relative;
+    top: -392px
+}
+.p___suka {
+    position: relative;
+    top: -450px; /* поднятие ближе к логотипу */
+    padding-inline: 90px; /* смещение по правым и левым */
+    margin-block-start: 1em; /* стандартный отступ от браузера */
+}
+.mockup-image {
+     position: absolute;
+    right: -220px;  /* смещение вправо отрицательное число заставит будто выглядывает саму картинку */  
+    bottom: -50px;  /* смещение вниз, чтоб уходить в угол */
+    height: auto;   /* самоподстраивающаяся высота */
+    width: 60%;   /* сама ширина(высота) изображения */
+    overflow: hidden; /* обрезает всё, что выпирает за блок */
+    transform: rotate(-2deg); /* небольшой поворот как на макете */
+}
